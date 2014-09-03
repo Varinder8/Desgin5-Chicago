@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundtheme"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="@dimen/labelWidth"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_height="@dimen/labelHeight"
+        android:text="@string/Amount"
+        android:textColor="@drawable/abc_ab_bottom_solid_dark_holo"
+        android:id="@+id/textView"
+
+        android:height="@dimen/labelHeight"
+        android:textSize="18dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controlsHeight"
+        android:inputType="number"
+        android:ems="10"
+        android:text=""
+        android:maxLength="9"
+        android:id="@+id/Amount"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:hint="Amount"
+        android:layout_weight="0.07"
+        />
+
+
+    <TextView
+        android:text="@string/PaymentMode"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_width="@dimen/labelWidth"
+        android:layout_height="@dimen/labelHeight"
+        android:textColor="@drawable/abc_ab_bottom_solid_dark_holo"
+
+        android:height="@dimen/labelHeight"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/marginTop" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_height="@dimen/controlsHeight"
+        android:id="@+id/spinnerPaymentMode"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"/>
+
+    <TextView
+        android:text="@string/Duration"
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/labelWidth"
+        android:layout_height="@dimen/labelHeight"
+        android:textColor="@drawable/abc_ab_bottom_solid_dark_holo"
+
+        android:height="@dimen/labelHeight"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/marginTop"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controlsHeight"
+        android:layout_marginTop="@dimen/marginTop"
+        android:id="@+id/spinnerDuration"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_height="50dp"
+        android:text="Search"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="SearchRecords"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
